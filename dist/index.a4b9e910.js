@@ -594,13 +594,14 @@ const keys = {
     }
 };
 const updateKey = (direction)=>{
-    console.log("Called");
+    runGame = pause.resumeGame();
     Object.entries(direction).forEach(([key, val])=>{
         // @ts-ignore
         keys[key].pressed = val;
     });
 };
 const updateAnalogKey = (direction)=>{
+    runGame = pause.resumeGame();
     Object.entries(direction).forEach(([key, val])=>{
         // @ts-ignore
         if (key !== "up") keys[key].pressed = val;

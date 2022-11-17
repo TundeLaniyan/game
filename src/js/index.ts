@@ -50,7 +50,7 @@ const keys = {
 }
 
 const updateKey = (direction: { left: string, right: string, up: string, down: string }) => {
-  console.log("Called")
+  runGame = pause.resumeGame();
   Object.entries(direction).forEach(([key, val]) => {
     // @ts-ignore
     keys[key].pressed = val;
@@ -58,6 +58,7 @@ const updateKey = (direction: { left: string, right: string, up: string, down: s
 }
 
 const updateAnalogKey = (direction: { left: boolean, right: boolean, up: boolean, down: boolean }) => {
+  runGame = pause.resumeGame();
   Object.entries(direction).forEach(([key, val]) => {
     // @ts-ignore
     if (key !== 'up') keys[key].pressed = val;
