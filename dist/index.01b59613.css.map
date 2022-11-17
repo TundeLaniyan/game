@@ -1,0 +1,1 @@
+{"mappings":"AAAA;;;;;;AAQA","sources":["mario-game/src/style.css"],"sourcesContent":["*,\n*::before,\n*::after {\n  margin: 0;\n  padding: 0;\n  box-sizing: border-box;\n}\n\nbody { \n  background-color: black;\n  display: flex;\n  justify-content: center;\n  align-items: center;\n }"],"names":[],"version":3,"file":"index.01b59613.css.map","sourceRoot":"/__parcel_source_root/"}
